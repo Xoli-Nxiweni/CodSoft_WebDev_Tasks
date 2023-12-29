@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Space Mono', monospace;
+}
+
+:root {
+    --rootColor: #71719db6;
+    --transition: all .4s ease-in-out;
+}
+
+::selection {
+    background: var(--rootColor);
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--rootColor);
+}
+
+:root {
+    --rootColor: #71719db6;
+}
+
+strong,
+h1, h2, h3, h4, h5, h6, .logo a {
+    color: var(--rootColor);
+}
+.iconsSocialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d4d4d4;
+    border-bottom: 1px solid #a7a7a7;
+    
+}
+.iconsSocialMedia i{
+    color: var(--rootColor);
+    padding: 10px 35px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    
+}
+.iconsSocialMedia i:hover{
+    color: #000;
+}
+nav {
+    position: sticky;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d4d4d4;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    transition: all .4s ease-in;
+    z-index: 100;
+}
+
+.logo a:hover {
+    
+}
+
+nav .links {
+    display: flex;
+}
+
+nav .links li {
+    list-style: none;
+    
+}
+
+
+nav .links a {
+    display: block;
+    padding: 20px 25px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .4s ease-in-out;
+    letter-spacing: 1px;
+}
+nav .links a:hover {
+    color: var(--rootColor);
+}
+
+#nav-toggle {
+    position: relative;
+    top: -100px;
+}
+
+nav .toggleBar {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    color: blue;
+    cursor: pointer;
+    z-index: 100;
+}
+
+nav .toggleBar .bar {
+    width: 25px;
+    height: 3px;
+    background: var(--rootColor);
+    margin: 5px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 940px) {
+    nav {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    nav .logo {
+        position: absolute;
+    }
+
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 10;
+        right: -100em;
+        top: 53px;
+        /* left: 40%; */
+        bottom: 0;
+        width: auto;
+        padding: 0 70px;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: inherit;
+        /* overflow: hidden; */
+        box-sizing: border-box;
+        transition: all .5s ease-in;
+        align-items: center;
+    }
+
+    nav .links li:hover {
+        background: none;
+    }
+
+    nav .links a {
+        font-size: 16px;
+        transition: all .4s;
+    }
+
+    nav :checked ~ .links {
+        right:0;
+        /* left: 100%; */
+    }
+
+    nav .toggleBar {
+        display: block;
+    }
+    .iconsSocialMedia i{
+        color: var(--rootColor);
+        padding: 10px 15px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        
+    }
+}
+
+
+.LandingContent{
+    background-image: url(https://goodstock.photos/wp-content/uploads/2018/11/Empty-Boat-in-Water.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+.container{
+    background: #ffffffba;
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25%;
+    position: relative;
+    top: 20%;
+}
+.container p{
+    color: #000;
+}
+.container input{
+    padding: 10px 25px;
+    color: #000;
+    margin: 10px auto;
+    background: transparent;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 1px black;
+}
+.container input:hover{
+   background-color: var(--rootColor);
+  
+}
+.LandingContent2{
+    background: #d4d4d4b9;
+    padding: 1.30% 0;
+    
+   
+}
+.ribbonBar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+.ribbonContent{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.ribbonContent strong{
+    font-size: .8em;
+}
+.ribbonContent i{
+    font-size: 5em;
+    padding: 10px;
+    color: var(--rootColor);
+}
+.details{
+    text-align: left;
+}
+.details p{
+    color: #000;
+    font-size: .7em;
+    font-weight: bold;
+}
+.otherStuff{
+    padding: 0 10%;
+    margin: 3% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    height: auto;
+}
+.cards:nth-child(1){
+    background-image: url(https://goodstock.photos/wp-content/uploads/2018/10/Empty-Boat-in-Water-1920x1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 5% 0;
+    border: 1px solid #ffffff00;
+}
+.cards:nth-child(2){
+    background-image: url(https://wallup.net/wp-content/uploads/2019/09/514301-rafting-river-water-boat-sailing-extreme.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 5% 0;
+    border: 1px solid #ffffff00;
+}
+.cards:nth-child(3){
+    background-image: url(https://c.pxhere.com/photos/18/7a/backlit_beach_boat_calm_waters_canoe_clouds_dawn_dusk-1485687.jpg!d);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 5% 0;
+    border: 1px solid #ffffff00;
+}
+.cards:nth-child(4){
+    background-image: url(https://i.pinimg.com/originals/4c/da/f4/4cdaf484974f540e493257afb669c554.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 5% 0;
+    border: 1px solid #ffffff00;
+}
+.cards:hover{
+    border: 1px solid #ffffff5f;
+}
+.cards input{
+    margin: 1em 0;
+    padding: 3%;
+    border: 1px solid #fff;
+    background: transparent;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+}
+.cards input:hover{
+    transform: scale(1.1);
+    background-color: var(--rootColor);
+}
+
+footer{
+    background: #303030;
+    
+}
+.footerContent{
+    padding: 10px 10%;
+    background: #303030;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.footerLeft{
+    text-align: left;
+}
+
+.footerRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.footerRight a, 
+.footerContent i{
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.footerRight a:hover,
+.footerCenter i:hover{
+    color: var(--rootColor);
+}
+
+footer .ending{
+    text-align: center;
+    font-size: .5em;
+}
+
+@media (max-width:940px) {
+    .otherStuff{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2px;
+       
+    }
+    .cards img{
+        width: 240px;
+        margin: 10px;
+    }
+    .container{
+        position: relative;
+        bottom: 15px;
+        
+    }
+    .ribbonContent i{
+        font-size: 1.5em;
+    }
+    .details p{
+        font-size: .6em;
+        font-weight: bold;
+    }
+    .footerContent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .footerCenter{
+        text-align: left;
+        padding: 0 0 -100px 0;
+        grid-column: span 1;
+    }
+}
